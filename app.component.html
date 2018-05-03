@@ -1,0 +1,14 @@
+<section class="{{ isSideBarExpanded ? '':'sidenav-toggled'}}">
+  <app-header (sideBarToggle)="onSideBarToggle($event)"></app-header>
+  <div class="content-wrapper">
+    <div class="container-fluid">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  <app-footer></app-footer>
+</section>
+
+<div class="alert">
+  <app-alert></app-alert>
+</div>
+
